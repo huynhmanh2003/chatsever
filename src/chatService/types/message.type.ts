@@ -15,11 +15,11 @@ export class MessageType {
   @Field()
   updatedAt: Date;
 
-  @Field(() => UserType)
-  userFrom: UserType;
+  @Field()
+  userFrom: string;
 
-  @Field(() => UserType)
-  userTo: UserType;
+  @Field()
+  userTo: string;
 
   @Field(() => ChatroomType)
   chatroom: ChatroomType;
