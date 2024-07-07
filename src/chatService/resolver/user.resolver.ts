@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
-import { UserService } from './user.service';
-import { UserType } from './types/user.type';
-import { UserDTO } from './dto/user.dto';
-import { UpdateUserInput } from './dto/userUpdate.dto';
+import { UserService } from '../service/user.service';
+import { UserType } from '../types/user.type';
+import { UserDTO } from '../dto/user.dto';
+import { UpdateUserInput } from '../dto/userUpdate.dto';
 import { query } from 'express';
-import { MessageType } from './types/message.type';
-import { createMessageInput } from './dto/message.dto';
+import { MessageType } from '../types/message.type';
+import { createMessageInput } from '../dto/message.dto';
 
 @Resolver((of) => UserType)
 export class UserResolver {

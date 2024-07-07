@@ -2,8 +2,8 @@ import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ApolloDriver } from '@nestjs/apollo';
-import { UserModule } from './order/user.module';
-import { MessageModule } from './order/message.module';
+import { UserModule } from './chatService/module/user.module';
+import { MessageModule } from './chatService/module/message.module';
 
 @Module({
   imports: [

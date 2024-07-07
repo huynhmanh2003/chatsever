@@ -1,7 +1,7 @@
 import { Resolver, Mutation, Args, Query } from '@nestjs/graphql';
-import { ChatroomService } from './chatRoom.service';
-import { Chatroom } from './entities/chatRoom.entity';
-import { CreateChatRoomInput } from './dto/chatRoom.dto';
+import { ChatroomService } from '../service/chatroom.service';
+import { Chatroom } from '../entities/chatRoom.entity';
+import { CreateChatRoomInput } from '../dto/chatRoom.dto';
 
 @Resolver(() => Chatroom)
 export class ChatroomResolver {

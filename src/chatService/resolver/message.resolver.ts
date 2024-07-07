@@ -1,7 +1,7 @@
 import { Args, Mutation, Resolver, Subscription } from '@nestjs/graphql';
-import { MessageService } from './message.service';
-import { MessageType } from './types/message.type';
-import { createMessageInput } from './dto/message.dto';
+import { MessageService } from '../service/message.service';
+import { MessageType } from '../types/message.type';
+import { createMessageInput } from '../dto/message.dto';
 import { PubSub } from 'graphql-subscriptions';
 
 @Resolver(() => MessageType)

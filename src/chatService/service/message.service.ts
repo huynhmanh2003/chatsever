@@ -1,10 +1,10 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { Message } from './entities/message.entity';
-import { User } from './entities/user.entity';
-import { Chatroom } from './entities/chatRoom.entity';
-import { createMessageInput } from './dto/message.dto';
+import { Message } from '../entities/message.entity';
+import { User } from '../entities/user.entity';
+import { Chatroom } from '../entities/chatRoom.entity';
+import { createMessageInput } from '../dto/message.dto';
 import { PubSub } from 'graphql-subscriptions';
 
 @Injectable()
